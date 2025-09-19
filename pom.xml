@@ -6,7 +6,7 @@
 
     <groupId>dev.danielpersson.commons</groupId>
     <artifactId>openobserve-appender</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 
     <name>OpenObserve Appender</name>
     <description>This implementation is an OpenObserve Appender for Log4J</description>

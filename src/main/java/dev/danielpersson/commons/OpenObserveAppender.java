@@ -257,7 +257,7 @@ public class OpenObserveAppender extends AppenderSkeleton {
         obj.put("_timestamp", String.valueOf(micros));
         obj.put("level", e.getLevel().toString());
         obj.put("message", e.getRenderedMessage());
-        obj.put("worker_name", instanceName);
+        obj.put("instance_name", instanceName);
         obj.put("host", host);
         obj.put("pid", pid);
         obj.put("thread", e.getThreadName());
