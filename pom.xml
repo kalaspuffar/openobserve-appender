@@ -6,7 +6,7 @@
 
     <groupId>dev.danielpersson.commons</groupId>
     <artifactId>openobserve-appender</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <name>OpenObserve Appender</name>
     <description>This implementation is an OpenObserve Appender for Log4J</description>
@@ -100,6 +100,17 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.6.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                    <waitUntil>uploaded</waitUntil>
+                </configuration>
             </plugin>
         </plugins>
     </build>
